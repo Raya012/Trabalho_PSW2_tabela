@@ -63,19 +63,7 @@ main {
 }
 
 /* Responsivo navbar para tablet e mobile */
-@media (max-width: 1024px) {
-  #logo {
-    width: 12%;
-  }
 
-  .nav-menu {
-    gap: 15px;
-  }
-
-  .nav-menu a {
-    font-size: 14px;
-  }
-}
 
 @media (max-width: 768px) {
   #logo {
@@ -142,17 +130,7 @@ main {
 }
 
 /* Responsivo slogan */
-@media (max-width: 1024px) {
-  .slogan {
-    width: 85%;
-    margin-top: 100px;
-    padding: 20px 12px;
-  }
 
-  .slogan h2 {
-    font-size: 24px;
-  }
-}
 
 @media (max-width: 768px) {
   .slogan {
@@ -205,14 +183,6 @@ section h2 {
   gap: 25px;
 }
 
-/* Responsivo grid de produtos */
-@media (max-width: 1024px) {
-  .produtos-grid {
-    width: 85%;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media (max-width: 768px) {
   .produtos-grid {
@@ -387,21 +357,6 @@ section h2 {
 }
 
 /* Responsivo história e receita */
-@media (max-width: 1024px) {
-  .historia-box,
-  .receita-box {
-    width: 100%;
-    max-width: 450px;
-  }
-
-  .historia-receita h2 {
-    font-size: 24px;
-  }
-
-  .historia-receita p {
-    font-size: 16px;
-  }
-}
 
 @media (max-width: 768px) {
   .historia-receita {
@@ -494,16 +449,7 @@ section h2 {
 }
 
 /* Responsivo footer */
-@media (max-width: 1024px) {
-  .footer-col h3,
-  .footer-col h4 {
-    font-size: 20px;
-  }
 
-  .footer-col p {
-    font-size: 14px;
-  }
-}
 
 @media (max-width: 768px) {
   .footer-container {
@@ -760,26 +706,7 @@ section h2 {
   background: #cc6200;
 }
 
-/* Responsivo formulário cartão */
-@media (max-width: 1024px) {
-  .cartao-area {
-    margin: 120px auto 40px;
-  }
 
-  .cartao-area h2 {
-    font-size: 28px;
-  }
-
-  .cartao-area p {
-    font-size: 16px;
-  }
-
-  .cartao-form {
-    max-width: 500px;
-    padding: 25px;
-    gap: 12px;
-  }
-}
 
 @media (max-width: 768px) {
   .cartao-area {
