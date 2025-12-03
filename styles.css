@@ -62,6 +62,7 @@ main {
   color: #fff3d1;
 }
 
+/* Responsivo navbar para tablet e mobile */
 
 
 @media (max-width: 768px) {
@@ -130,6 +131,7 @@ main {
 
 /* Responsivo slogan */
 
+
 @media (max-width: 768px) {
   .slogan {
     width: 90%;
@@ -181,7 +183,7 @@ section h2 {
   gap: 25px;
 }
 
-
+/* Responsivo grid de produtos */
 
 @media (max-width: 768px) {
   .produtos-grid {
@@ -515,6 +517,7 @@ section h2 {
   border-collapse: collapse;
   background: white;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
 }
 
 .produtos-tabela th {
@@ -550,9 +553,7 @@ section h2 {
   background: #146c2d;
 }
 
-/* Responsivo tabela */
-
-
+/* Melhorado responsivo tabela para tablet e mobile */
 @media (max-width: 768px) {
   .tabela-produtos {
     width: 95%;
@@ -561,52 +562,81 @@ section h2 {
 
   .tabela-produtos h2 {
     font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .produtos-tabela {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
   }
 
   .produtos-tabela th {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 13px;
+    padding: 8px 6px;
   }
 
   .produtos-tabela td {
-    font-size: 13px;
-    padding: 8px;
+    font-size: 12px;
+    padding: 8px 6px;
   }
 
   .btn-add {
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 5px 8px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 600px) {
   .tabela-produtos {
     width: 95%;
-    margin: 80px auto;
+    margin: 85px auto 20px;
+    padding: 0 5px;
   }
 
   .tabela-produtos h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 12px;
   }
 
+  /* Tabela scrollável horizontalmente em mobile */
   .produtos-tabela {
-    font-size: 12px;
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .produtos-tabela thead {
+    display: block;
   }
 
   .produtos-tabela th {
-    font-size: 12px;
-    padding: 6px;
+    font-size: 10px;
+    padding: 6px 4px;
+  }
+
+  .produtos-tabela tbody {
+    display: block;
+  }
+
+  .produtos-tabela tr {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .produtos-tabela td {
-    font-size: 11px;
-    padding: 6px;
+    font-size: 10px;
+    padding: 6px 4px;
+    display: inline-block;
+    width: 23%;
   }
 
   .btn-add {
-    padding: 4px 8px;
-    font-size: 10px;
+    padding: 4px 6px;
+    font-size: 9px;
+    white-space: nowrap;
   }
 }
 
@@ -826,39 +856,18 @@ section h2 {
   width: 70%;
 }
 
-
-
+/* Responsivo sobre-box melhorado para tablet e mobile */
 @media (max-width: 768px) {
   .sobre-box {
     width: 95%;
     margin: 40px auto;
-    gap: 15px;
-  }
-
-  .sobre-box div {
-    width: 100%;
-    max-width: 350px;
-    padding: 15px;
-  }
-
-  #mercado,
-  #bancada,
-  #funcionarios {
-    height: 80%;
-    width: 80%;
-  }
-}
-
-@media (max-width: 600px) {
-  .sobre-box {
-    width: 95%;
-    margin: 30px auto;
     gap: 12px;
   }
 
   .sobre-box div {
     width: 100%;
-    padding: 12px;
+    max-width: 100%;
+    padding: 15px;
   }
 
   .sobre-box div h3 {
@@ -867,6 +876,43 @@ section h2 {
 
   .sobre-box div p {
     font-size: 14px;
+  }
+
+  #mercado,
+  #bancada,
+  #funcionarios {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-box {
+    width: 95%;
+    margin: 25px auto;
+    gap: 10px;
+  }
+
+  .sobre-box div {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .sobre-box div h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .sobre-box div p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  #mercado,
+  #bancada,
+  #funcionarios {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -916,7 +962,7 @@ section h2 {
   background: #146c2d;
 }
 
-
+/* Galeria responsiva para tablet e mobile */
 @media (max-width: 768px) {
   .galeria {
     width: 95%;
@@ -924,7 +970,7 @@ section h2 {
 
   .galeria h2 {
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .galeria-grid {
@@ -933,16 +979,21 @@ section h2 {
   }
 
   .btn-voltar {
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 10px 18px;
+    font-size: 14px;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 600px) {
+  .galeria {
+    width: 95%;
+    margin: 20px auto;
+  }
+
   .galeria h2 {
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .galeria-grid {
@@ -951,8 +1002,8 @@ section h2 {
   }
 
   .btn-voltar {
-    padding: 8px 15px;
-    font-size: 13px;
+    padding: 8px 14px;
+    font-size: 12px;
     margin-top: 15px;
   }
 }
@@ -994,15 +1045,11 @@ section h2 {
   line-height: 1.7;
 }
 
-/* Responsivo sobre-section */
-
-
+/* Sobre-section responsivo para tablet e mobile */
 @media (max-width: 768px) {
   .sobre-section {
-    width: 95%;
-    margin-top: 8%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin: 6% auto;
     padding: 22px 18px;
   }
 
@@ -1014,23 +1061,25 @@ section h2 {
   .sobre-section p {
     font-size: 15px;
     line-height: 1.6;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .sobre-section {
     width: 95%;
-    margin-top: 10%;
+    margin: 8% auto;
     padding: 18px 14px;
+    border-radius: 8px;
   }
 
   .sobre-section h2 {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 10px;
   }
 
   .sobre-section p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     max-width: 100%;
   }
