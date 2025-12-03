@@ -1,0 +1,701 @@
+/* ================== CONFIGURAÇÃO GLOBAL ================== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+img { max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+main { margin-top: 100px; }
+
+
+/* ================== NAVBAR ================== */
+.navbar {
+    background: linear-gradient(to right, #1a8a3a, #ff7b00);
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 10%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #fff3d1;
+}
+
+
+/* ================== SLOGAN ================== */
+.slogan {
+    
+    margin-top: 120px;
+    text-align: center;
+    padding: 25px 15px;
+    font-weight: bold;
+    font-size: 28px;
+    border-left: 6px solid #1a8a3a;
+    border-right: 6px solid #ff7b00;
+    background: #fff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.15);
+
+}
+
+.slogan h2 {
+    font-size: 30px;
+    color: #146c2d;
+    font-weight: bold;
+}
+
+
+/* ================== PROMOÇÕES ================== */
+.promoções {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.promoções h2 {
+    font-size: 32px;
+    color: #cc6200;
+    font-weight: bold;
+}
+
+section h2{
+    text-align: center;
+}
+/* GRID DE PRODUTOS */
+.produtos-grid {
+    width: 70%;    
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+
+/* ================== CARDS ================== */
+.produto-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,.1);    
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#fotomaca{
+height: 100%;
+}
+
+#fotoabacaxi{
+height: 100%;
+}
+
+#fotolaranja{
+height: 100%;
+}
+
+
+
+.produto-card img {
+    width: 100%;
+    height: 50%; 
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.produto-card:hover {
+    transform: scale(1.04);
+}
+
+.produto-info {
+    padding: 15px;    
+    text-align: center;
+}
+
+.produto-info h3 {
+    font-size: 22px;
+    color: #146c2d;
+    margin-bottom: 8px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7b00;
+    margin-bottom: 10px;
+}
+
+
+/* ================== BOTÃO ================== */
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    background: #1a8a3a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-comprar:hover {
+    background: #146c2d;
+}
+
+
+
+
+
+
+
+
+
+/* ================= HISTÓRIA & RECEITA DO DIA ================= */
+
+.historia-receita{
+    width: 90%;
+    margin: 70px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.historia-box, .receita-box{
+    width: 420px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,.1);
+    border-top: 6px solid #1a8a3a;
+    border-bottom: 6px solid #ff7b00;
+    transition: .3s;
+}
+
+.historia-box:hover, .receita-box:hover{
+    transform: scale(1.03);
+}
+
+/* TÍTULOS */
+.historia-receita h2{
+    font-size: 28px;
+    color: #cc6200;
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.historia-receita p{
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* RECEITA */
+.ingredientes{
+    margin-top: 15px;
+    text-align:left;
+}
+
+.ingredientes li{
+    margin: 4px 0;
+}
+
+.modo-preparo{
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* BOTÃO */
+.btn-receita{
+    margin-top: 18px;
+    background: #ff7b00;
+    color: white;
+    padding: 10px 22px;
+    border:none;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-receita:hover{
+    background:#cc6200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= FOOTER ================= */
+.footer {
+    margin-top: 60px;
+    background: linear-gradient(to right, #1a8a3a, #ff7b00);
+    color: white;
+    padding: 40px 0 10px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,.25);
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-col p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+
+
+@media(max-width:780px){
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+.tabela-produtos {    
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.tabela-produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cc6200;
+    margin-bottom: 25px;
+}
+
+.produtos-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0,0,0,.1);
+}
+
+.produtos-tabela th {
+    background: linear-gradient(to right, #1a8a3a, #ff7b00);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.produtos-tabela td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.produtos-tabela tr:hover {
+    background: #fff3e1;
+}
+
+/* botão tabela */
+.btn-add {
+    padding: 6px 12px;
+    background: #1a8a3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:.3s;
+}
+
+.btn-add:hover {
+    background: #146c2d;
+}
+
+
+
+
+
+/* ===================== FORMULÁRIO CARTÃO ===================== */
+.cartao-area {
+    width: 90%;
+    margin: 140px auto 50px;
+    text-align: center;
+}
+
+.cartao-area h2 {
+    font-size: 32px;
+    color: #cc6200;
+    font-weight: bold;
+}
+
+.cartao-area p {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cartao-form {
+    max-width: 600px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartao-form input,
+.cartao-form textarea {
+    padding: 12px;
+    border: 1px solid #b4b4b4;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.cartao-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.cartao-form input:focus,
+.cartao-form textarea:focus {
+    border-color: #1a8a3a;
+}
+
+.btn-enviar {
+    background: #ff7b00;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-enviar:hover {
+    background: #cc6200;
+}
+
+
+
+
+.sobre-banner {
+    margin-top: 105px;
+    background: linear-gradient(to right, #1a8a3a90, #ff7b0090),
+    url("imagens/banner.jpg") center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+    font-size: 22px;
+}
+
+.sobre-banner h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* CAIXAS COM IMAGENS */
+.sobre-box {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.sobre-box div {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,.1);
+    transition:.3s;
+    text-align: center;
+}
+
+.sobre-box div:hover {
+    transform: scale(1.05);
+}
+
+.sobre-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* GALERIA */
+.galeria {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #cc6200;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 30px;
+    background: #1a8a3a;
+    color: white;
+    padding: 12px 25px;
+    font-size: 17px;
+    border-radius: 6px;
+    transition:.3s;
+}
+
+.btn-voltar:hover {
+    background: #146c2d;
+}
+
+
+#mercado{
+   height: 70%;
+   width: 70%;
+    
+}
+
+#bancada{
+    height: 70%;
+    width: 70%;
+}
+
+#funcionarios{
+    height: 70%;
+    width: 70%;
+}
+
+
+
+.sobre-section{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 85%;    
+    text-align: center;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
+    border-left: 6px solid #1a8a3a;
+    border-right: 6px solid #ff7b00;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+}
+
+.sobre-section:hover {
+    transform: scale(1.02); /* leve destaque */
+}
+
+/* título com destaque */
+.sobre-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #cc6200;
+    margin-bottom: 18px;
+}
+
+/* texto */
+.sobre-section p {
+    font-size: 18px;
+    color: #444;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+
+
+#fotoacougue{
+    height: 100%;
+    width: 100%;
+}
+
+#fotocaixas{
+    height: 100%;
+    width: 100%;
+}
+
+#fotocorredores{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* responsividade */
+@media(max-width:700px){
+    .produtos-tabela th,
+    .produtos-tabela td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+/* ================== RESPONSIVIDADE ================== */
+@media(max-width:900px){
+    .produtos-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:600px){
+    .produtos-grid { grid-template-columns: 1fr; }
+}
+
+
+
+@media(max-width:800px){
+    .sobre-section{
+        padding: 25px 15px;
+    }
+    .sobre-section h2{
+        font-size: 26px;
+    }
+    .sobre-section p{
+        font-size: 16px;
+    }
+}

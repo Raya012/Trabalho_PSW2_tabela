@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raya Supermercados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<script>
+window.onload = function() {
+    setTimeout(() => {
+        alert("Bem-vindo ao Raya Supermercados! 🛒\nConfira nossas promoções e aproveite os melhores preços!");
+    }, 800); // a mensagem aparece 0.8s após carregar
+}
+</script>
+
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div>
+                <img id="logo" src="imagens/logo1.png" alt="Logo Raya Supermercados">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="tabela.html">Tabela de preços</a></li>
+                    <li><a href="cartao.html">Faça seu cartão</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- SLOGAN -->
+    <div class="slogan">
+        <h2>Venha para o melhor mercado da região.</h2>
+    </div>
+
+
+    
+    <section class="promocoes">
+        <div class="bloco">
+
+            <h2 style="color: #1a8a3a;">Promoções da Semana</h2>
+
+            <div class="produtos-grid">
+
+                <!-- PRODUTO 1 -->
+                <article class="produto-card">
+                    <div><img id="fotolaranja" src="imagens/laranja2.jpg" alt="Laranja"></div>
+                    <div class="produto-info">
+                        <h3>Laranja</h3>
+                        <div class="preco">R$ 7,90 kg</div>
+                        <button class="btn-comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="produto-card">
+                    <img id="fotoabacaxi" src="imagens/abacaxi2.jpg" alt="Abacaxi">
+                    <div class="produto-info">
+                        <h3>Abacaxi</h3>
+                        <div class="preco">R$ 9,99 un</div>
+                        <button class="btn-comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 3 -->
+                <article class="produto-card">
+                    <img id="fotomaca" src="imagens/maca.jpg" alt="Maçã">
+                    <div class="produto-info">
+                        <h3>Maçã</h3>
+                        <div class="preco">R$ 4,99 kg</div>
+                        <button class="btn-comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="historia-receita">
+
+    <div class="historia-box">
+        <h2>História do Dia 🏡</h2>
+        <p>
+            Dona Lourdes visita o Raya Supermercados há mais de 8 anos.
+            Ela conta que, toda quinta-feira, passa para escolher frutas frescas
+            e preparar o suco preferido dos netos — laranja com maçã!
+        </p>
+        <p>
+            Para ela, o mercado não é apenas um lugar de compra,
+            é parte da rotina, das lembranças e do carinho em servir a família.
+        </p>
+    </div>
+
+    <div class="receita-box">
+        <h2>Receita do Dia 🍽</h2>
+        <h3>🍊 Suco Natural de Laranja com Maçã</h3>
+
+        <ul class="ingredientes">
+            <li>4 laranjas bem frescas</li>
+            <li>1 maçã grande</li>
+            <li>300ml de água gelada</li>
+            <li>Açúcar ou mel (opcional)</li>
+            <li>Gelo a gosto</li>
+        </ul>
+
+        <p class="modo-preparo">
+            <strong>Modo de preparo:</strong><br>
+            Descasque as laranjas, pique a maçã e bata tudo no liquidificador
+            com a água e o gelo. Coe se desejar e sirva geladinho.
+            Refrescante e cheio de vitaminas!
+        </p>
+
+        
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Raya Supermercados</h3>
+            <p>O melhor para sua família todos os dias.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+            <p>📍 Rua das Laranjeiras, 128 - Jardim Verde</p>
+            <p>🏙️ Floraville - SP</p>
+            <p>📞 (11) 93428-7762</p>
+            <p>📧 atendimento@rayamercados.com</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horário de Funcionamento</h4>
+            <p>Seg a Sex — 08:00 às 20:00</p>
+            <p>Sábados — 08:00 às 18:00</p>
+            <p>Domingos — 08:00 às 13:00</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Raya Supermercados — Todos os direitos reservados.
+    </div>
+</footer>
+
+</body>
+</html>
